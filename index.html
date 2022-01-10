@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨Meditation✨</title>
+    <style>
+        body {
+          background: linear-gradient(#c9c5f7, #d6d2f9, #e3e1fb, #f3f2fd);
+        }
+        .content {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 15px 60px;
+        }
+        H1,
+        H2 {
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+        }
+        h1 {
+          color: #31a6ba;
+          font-size: 42px;
+          margin: 0 auto;
+        }
+        h2 {
+          font: weight 100;
+          color: black;
+          padding: 15px;
+          border-radius: 4px;
+        }
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          border-radius: 10px;
+        }
+        p {
+          text-align: left;
+          font-size: 16px;
+          line-height: 1.5;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+          display: block;
+          margin: 20px auto;
+          background: #fff;
+          color: #31a6ba;
+          font-size: 16px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 17px 22px;
+          border: 1px solid #31a6ba;
+          border-radius: 25px;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          transition: all 200ms ease-in-out;
+        }
+        button:hover {
+          color: #fff;
+          background-color: #766aff;
+          cursor: pointer;
+          opacity: 0.9;
+        }
+        span {
+          color: #31a6ba;
+        }
+        .learn {
+          color: #31a6ba;
+          text-decoration: none;
+          font-size: 12px;
+        }
+        .by {
+          text-align: center;
+          font-family: "Courier New", Courier, monospace;
+        }
+      </style>
+</head>
+<body>
+    <div class="content">
+      <h1>
+        ✨🧘🏾‍♀️💫 <br />
+        When In Doubt, Zen It Out!
+      </h1>
+      <h2>The Power Of Meditation 🌙</h2>
+      <img
+        src="images/meditate.png"
+        alt="Woman Meditating"
+      />
+      <hr />
+      <p>
+        🌞 <strong> <span> <em> Meditation</em> </span></strong> is a practice where an
+        individual uses a technique – such as  mindfulness, or focusing the mind
+        on a particular object, thought, or activity – to train attention and
+        awareness, and achieve a mentally clear and emotionally calm and stable
+        state. Scholars have found meditation elusive to define, as practices
+        vary both between traditions and within them.
+      </p>
+      <hr />
+      <p>
+        ✨ <strong> <span> <em> Meditation</em> </span></strong>is practiced in numerous
+        religious traditions. The earliest records of meditation (dhyana) are
+        found in the Vedas, and meditation exerts a salient role in the
+        contemplative repertoire of Hinduism and Buddhism. Since the 19th
+        century, Asian meditative techniques have spread to other cultures where
+        they have also found application in non-spiritual contexts, such as
+        business and health.
+      </p>
+      <hr />
+      <p>
+        🌙 <strong> <span> <em> Meditation</em> </span></strong> may significantly reduce
+        stress, anxiety, depression, and pain, and enhance peace, perception,
+        self-concept, and well-being. Research is ongoing to better understand
+        the effects of meditation on health (psychological, neurological, and
+        cardiovascular) and other areas.
+        <hr />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Meditation"
+        target="_blank"
+        class="learn"
+      >
+        Read More On Wiki
+      </a>
+      <button>👉🏾 Attend A Session</button>
+      <p class="by">Coded By Stefanie Polanco</p>
+      <script>
+        function listen() {
+          let name = prompt("What is your first name?");
+          let decision = prompt(
+            "Are you ready to try meditating? Please answer yes or no."
+          );
+          let heading = document.querySelector("h1");
+          if (decision === "yes") {
+            heading.innerHTML =
+              "🥰 <br /> Woohoo, how exciting " +
+              name +
+              "! Meditation is full of benefits!";
+          } else {
+            heading.innerHTML =
+              "😭 <br /> That's okay " +
+              name +
+              ". Meditation isn't for everyone.";
+          }
+        }
+        let changeButton = document.querySelector("button");
+        changeButton.addEventListener("click", listen);
+      </script>
+    </div>
+  </body>
+</html>
